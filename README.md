@@ -29,7 +29,6 @@ git clone <repository-url>
 
 Install dependencies:
 ```bash
-cd live-chat-room
 npm install
 ```
 

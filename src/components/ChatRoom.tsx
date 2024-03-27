@@ -23,18 +23,6 @@ const ChatRoom = ({ username }: ChatRoomProperties) => {
     }
   };
 
-  //   useEffect(() => {
-  //     const publishMessage = async () => {
-  //       console.log("chat room");
-
-  //       if (channel) {
-  //         await channel.publish("my_channel", "hello!");
-  //       } else {
-  //         console.error("Channel is undefined");
-  //       }
-  //     };
-  //     publishMessage();
-  //   }, [channel]);
 
   const { channel } = useChannel("my_channel", (message: Message) => {
     message.clientId = username;
@@ -53,7 +41,7 @@ const ChatRoom = ({ username }: ChatRoomProperties) => {
       }}
     >
       <Typography variant="h6" gutterBottom>
-        Chat Room
+        Chat Room {channel?.name}
       </Typography>
       <Box sx={{ maxHeight: 400, overflowY: "auto", marginBottom: 2 }}>
         {messages.map((msg, index) => (
@@ -71,17 +59,24 @@ const ChatRoom = ({ username }: ChatRoomProperties) => {
           </Typography>
         ))}
       </Box>
-      <TextField
-        fullWidth
-        label="Type a message"
-        variant="outlined"
-        value={message}
-        onChange={handleMessageChange}
-        sx={{ marginBottom: 1 }}
-      />
-      <Button variant="contained" onClick={handleSendMessage}>
-        Send
-      </Button>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <TextField
+          fullWidth
+          label="Type a message"
+          variant="outlined"
+          value={message}
+          onChange={handleMessageChange}
+          sx={{ marginBottom: 1, marginRight: 1 }}
+        />
+        <Button variant="contained" onClick={handleSendMessage}>
+          Send
+        </Button>
+      </Box>
     </Box>
   );
 };
