@@ -1,40 +1,62 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Live Chat Room
 
-First, run the development server:
+This project is a simple live chat room application built with TypeScript, React, and Ably. It allows users to join a chat room with a username and send and receive messages in real-time.
+
+# Features
+
+User authentication with usernames
+Real-time messaging using Ably channels
+Responsive design for mobile and desktop
+Simple and intuitive user interface
+
+
+# Technologies Used
+
+[TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds static typing to the language.
+[React](https://react.dev/): A JavaScript library for building user interfaces.
+[Ably](https://ably.com/): A real-time messaging platform that provides the infrastructure to build live chat applications.
+
+# Installation
+
+Clone the repository:
+
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies:
+```bash
+cd live-chat-room
+npm install
+```
+
+Set up environment variables:
+
+Create a .env.local file in the root directory.
+Add your Ably API key and client ID to the .env.local file:
+
+
+```bash
+NEXT_PUBLIC_ABLY_API_KEY=your-api-key
+NEXT_PUBLIC_ABLY_CLIENT_ID=your-client-id
+```
+
+Run the development server:
+npm run dev
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+To see the live chat and others' messages, open another localhost in a separate browser window or tab.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Usage
+Enter your desired username in the username input field and click "Submit" to join the chat room.
+Type your message in the message input field and press "Send" to send it to the chat room.
+Your messages will be displayed in real-time along with messages from other users.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to customize the content according to your project's specific details and requirements. Once you have created your README.md file, you can add it to your Git repository and commit it along with your project code.
