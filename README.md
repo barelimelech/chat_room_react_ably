@@ -14,9 +14,9 @@ Simple and intuitive user interface
 
 ## Technologies Used
 
-[TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds static typing to the language.
-[React](https://react.dev/): A JavaScript library for building user interfaces.
-[Ably](https://ably.com/): A real-time messaging platform that provides the infrastructure to build live chat applications.
+1. [TypeScript](https://www.typescriptlang.org/): A superset of JavaScript that adds static typing to the language.
+2. [React](https://react.dev/): A JavaScript library for building user interfaces.
+3. [Ably](https://ably.com/): A real-time messaging platform that provides the infrastructure to build live chat applications.
 
 ## Installation
 
@@ -34,8 +34,9 @@ npm install
 ```
 
 Set up environment variables:
-
+<br/>
 Create a .env.local file in the root directory.
+
 Add your Ably API key and client ID to the .env.local file:
 
 
@@ -51,6 +52,7 @@ npm run dev
 npm run dev
 ```
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+<br/>
 To see the live chat and others' messages, open another localhost in a separate browser window or tab.
 
 ## Usage
@@ -58,5 +60,7 @@ Enter your desired username in the username input field and click "Submit" to jo
 Type your message in the message input field and press "Send" to send it to the chat room.
 Your messages will be displayed in real-time along with messages from other users.
 
+<br/>
+<br/>
 
 Feel free to customize the content according to your project's specific details and requirements. Once you have created your README.md file, you can add it to your Git repository and commit it along with your project code.
